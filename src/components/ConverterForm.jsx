@@ -22,6 +22,7 @@ const ConverterForm = () => {
         if (isLoading) return;
         setIsLoading(true);
 
+        
         try {
             const response = await fetch(API_URL);
             if (!response.ok) throw Error("Something went wrong!");
